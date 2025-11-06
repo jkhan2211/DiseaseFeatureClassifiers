@@ -1,4 +1,4 @@
-# Chronic Disease Risk Predictor (DDSAS)
+# Symptom-Based Diagnostic Decision Support AI System (DDSAS)
 
 A machine learning project predicting the likelihood of chronic diseases based on patient symptoms and health metrics. This end-to-end system demonstrates MLOps principles, with data preprocessing, model training, MLflow experiment tracking, and a local Streamlit UI demo.  
 
