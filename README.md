@@ -25,12 +25,12 @@ This project helps all stakeholders make **informed, timely decisions** in healt
 
 ## 🧩 Project Overview
 
-chronic_disease_risk_predictor/
-├── data/ # Raw dataset
-│ └── Disease_Prediction.csv
-├── src/
-│ └── streamlit_app.py # Interactive demo UI
-├── requirements.txt # Python dependencies
+chronic_disease_risk_predictor
+├── data #Raw Dataset
+│   ├── Disease_Prediction.csv
+├── src
+│   ├── streamlit_app.py # Interactive demo UI
+├── requirements.txt
 └── README.md # Project overview
 
 ---
