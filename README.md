@@ -1,6 +1,6 @@
 # Chronic Disease Risk Predictor (DDSAS)
 
-A machine learning project predicting the likelihood of chronic diseases based on patient symptoms and health metrics. This end-to-end system demonstrates **MLOps principles**, with data preprocessing, model training, MLflow experiment tracking, and a local Streamlit UI demo.  
+A machine learning project predicting the likelihood of chronic diseases based on patient symptoms and health metrics. This end-to-end system demonstrates MLOps principles, with data preprocessing, model training, MLflow experiment tracking, and a local Streamlit UI demo.  
 
 It provides a **data-driven decision support tool** for healthcare settings.
 
