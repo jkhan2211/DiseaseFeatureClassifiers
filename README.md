@@ -40,7 +40,7 @@ chronic_disease_risk_predictor
 ## 🤝 Team Members
 
 [Junaid Khan](https://www.linkedin.com/in/junaid-devops)• 
-[Adam Healy]() • 
+[Adam Healey]() • 
 [Ali Hyder]() • 
 [Olga Nazarenko]() • 
 [Pradeep Venkatesan]()
