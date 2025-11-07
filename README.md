@@ -33,7 +33,7 @@ This project helps all stakeholders make **informed, timely decisions** in healt
 ## 🧩 Folder Structure
 
 ```
-chronic_disease_risk_predictor
+DiseaseFeatureClassifiers/
 ├── data #Raw Dataset
 │   ├── Disease_Prediction.csv
 ├── src
@@ -115,10 +115,12 @@ Video Link:
 ```bash
 git clone https://github.com/<username>/Chronic_DiseaseRisk_Predictor.git
 cd Chronic_DiseaseRisk_Predictor
+```
 
 2. **Clone the repository**
 
 ```bash
 pip install -r requirements.txt
+```
 
 
