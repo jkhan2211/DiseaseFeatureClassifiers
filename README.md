@@ -8,13 +8,12 @@ It provides a **data-driven decision support tool** for healthcare settings.
 
 # Business Objective
 
+The **DiseaseFeatureClassifiers** delivers significant value to all stakeholders in the healthcare ecosystem. By leveraging **AI-driven symptom analysis**, the system **increases diagnostic precision and productivity**, reducing the cognitive and administrative burden on **frontline healthcare professionals**. It **improves patient outcomes** through timely and accurate risk assessment, while offering a **suggestive approach to reduce operational costs** for clinics and hospitals by optimizing workflows and minimizing unnecessary tests or interventions. Additionally, the tool helps **free up critical resources**, including emergency room capacity, enabling healthcare institutions to focus on patients with the most urgent needs, thereby enhancing **overall efficiency and cost-effectiveness**.
 
-
-It provides a **data-driven decision support tool** for healthcare settings.
 
 ---
 
-## 🎯 Project Overview 
+## 🎯 Stakeholders
 
 The stakeholders of DDSAS include:
 
