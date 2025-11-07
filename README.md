@@ -6,6 +6,14 @@ It provides a **data-driven decision support tool** for healthcare settings.
 
 ---
 
+# Business Objective
+
+
+
+It provides a **data-driven decision support tool** for healthcare settings.
+
+---
+
 ## 🎯 Project Overview 
 
 The stakeholders of DDSAS include:
@@ -79,6 +87,22 @@ chronic_disease_risk_predictor
 | DBSCAN                 | Density-based, finds arbitrarily shaped clusters |      |
 | Agglomerative          | Hierarchical clustering                        |  |
 
+
+---
+
+## ⚠️ Risks & Uncertainty
+
+**Accuracy of Prognosis:**  
+The reliability of predictions must be evaluated to ensure their correctness.
+
+**Data Quality:**  
+Inaccurate or incomplete data can lead to flawed predictions, impacting overall outcomes.
+
+**Model Bias:**  
+Bias present in the data may skew results, necessitating thorough examination and adjustment.
+
+ 
+---
 
 ## 📦 Demo
 
