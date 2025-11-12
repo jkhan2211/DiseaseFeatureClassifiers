@@ -21,6 +21,10 @@ The stakeholders of DDSAS include:
 
 This project helps all stakeholders make **informed, timely decisions** in healthcare.
 
+## Clinical Risks
+It is important to note that DDSAS is designed as a diagnostic support tool intended to assist front-line healthcare professionals. Patient well-being is central to our approach; the system is not meant to deliver definitive diagnoses based solely on symptom patterns. Instead, it aims to support nurses, physicians, and telehealth providers by offering data-driven predictions that complement their clinical expertise.
+
+Rather than presenting a conclusive prognosis, the tool provides probabilistic estimates of potential diseases based on reported symptoms, helping guide clinicians toward more informed decisions and appropriate next steps in patient care.
 ---
 
 ## 🧩 Folder Structure
@@ -56,7 +60,9 @@ The dataset is already divided into training and testing subsets. In total, it c
 
 | Component           | Technology       | Purpose                        |
 |--------------------|----------------|--------------------------------|
-| Data Handling       | pandas, numpy   | Clean & prepare dataset        |
+| Data Preprocessing       | pandas, numpy   | Clean & prepare dataset        |
+| Visualization         | Matplotlib, seaborn, plotly | Visual data summaries  |
+|Exploratory Data Analysis | DBScan, PCA    | Dimensionality reduction and clustering | 
 | Machine Learning    | scikit-learn, xgboost | Train predictive models   |
 | Experiment Tracking | MLflow          | Log experiments & model metrics|
 | UI / Demo           | Streamlit       | Local interactive interface   |
@@ -84,6 +90,9 @@ The dataset is already divided into training and testing subsets. In total, it c
 | DBSCAN                 | Density-based, finds arbitrarily shaped clusters |      ALH|
 | Agglomerative          | Hierarchical clustering                        | PV |
 
+## Exploratory Data Analysis (EDA)
+
+It is important to note that while the open-source dataset has already been split into a training and testing components, inspection of the sizes of these dataframes shows that the testing dataset represents only 1% of the training set, which according to data science and model training best practices is inadequate.  To remedy this issue, we opted to recombine the training and testing dataset, and use <pre> sklearn train_test_split </pre> to create a new test dataset from 20% of patients.
 
 ## 📦 Demo
 
