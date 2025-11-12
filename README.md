@@ -92,15 +92,41 @@ DiseaseFeatureClassifiers/
 ## ⚠️ Risks & Uncertainty
 
 **Accuracy of Prognosis:**  
-The reliability of predictions must be evaluated to ensure their correctness.
+The reliability of predictions must be evaluated to ensure their correctness. In healthcare, incorrect predictions, such as false negatives and positives, could lead to inappropriate patient management and harm.
 
 **Data Quality:**  
-Inaccurate or incomplete data can lead to flawed predictions, impacting overall outcomes.
+Inaccurate or incomplete data can lead to flawed predictions, impacting overall outcomes.To mitigate this risk, we will implement rigorous data validation processes and conduct regular audits to ensure data integrity.
 
 **Model Bias:**  
-Bias present in the data may skew results, necessitating thorough examination and adjustment.
+Bias present in the data may skew results, necessitating thorough examination and adjustment. We will regularly review our model for biases and make necessary adjustments to ensure equitable treatment across diverse patient populations.
 
- 
+**Clinical Risk:**
+It is crucial to assess the potential clinical risks associated with false predictions. A comprehensive evaluation of the impact on patient safety will be conducted as part of our testing process.
+
+**Regulatory and Ethical Constraints:**
+Compliance with regulatory and ethical standards is essential. This includes ensuring explainability and auditability of the model’s decisions, as well as safeguarding patient data privacy.
+
+**Scope Definition:**
+This project is designed as a support tool rather than an autonomous diagnostic system. Clarifying its scope will help manage expectations in clinical settings.
+
+---
+
+## 📊 Monitoring and Mitigation Plan
+
+To manage these identified risks effectively, we will focus on:
+
+**Data Quality Checks:**
+Implement routine checks on data inputs to identify and address any inaccuracies promptly.
+
+**Collaborative Feedback:**
+Establish informal channels with healthcare professionals for ongoing feedback, facilitating minor adjustments based on practical insights.
+
+**Basic User Guidelines:**
+Provide simplified guidelines that outline best practices and limitations of the tool for users without extensive training requirements.
+
+**Feedback Loop for Incidents:** 
+Create a straightforward feedback process to report issues as they arise, allowing for quick responses without complex protocols.
+
 ---
 
 ## 📦 Demo
@@ -113,8 +139,8 @@ Video Link:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/<username>/Chronic_DiseaseRisk_Predictor.git
-cd Chronic_DiseaseRisk_Predictor
+git clone https://github.com/jkhan2211/DiseaseFeatureClassifiers.git
+cd DiseaseFeatureClassifiers
 ```
 
 2. **Clone the repository**
