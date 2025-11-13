@@ -597,6 +597,46 @@ for percent in perturbations:
 
 As the plot shows, the model's accuracy remains robust against symptoms patterns that are unrelated to a patient's disease.  However, model accuracy begins to sharply decline beyond 15% dataset perturbation (~19% of symptoms unrelated to prognosis.)
 
+### Custom "Leave-one-out" approach
+Another way to test the robustness of our models it to test on symptom combinations for diseases that are not present in our training set.
+
+```
+#set up new training and testing datasets
+df1 = mergedDF.copy()
+
+# Count how many rows each prognosis has
+counts = df1.groupby('prognosis')['SymptomGroup'].transform('count')
+
+# Keep only prognoses with more than 1 group
+multi_group_df = df1[counts > 1]
+
+# Randomly pick one unique SymptomGroup per prognosis
+def pick_one(x):
+    return np.random.choice(x)  # safer than pd.Series(...).sample(1)
+
+random_groups = multi_group_df.groupby('prognosis')['SymptomGroup'].unique().apply(pick_one).reset_index()
+random_groups.columns = ['prognosis', 'SymptomGroup']
+
+# Remove all rows matching these prognosis + SymptomGroup pairs
+removed_rows = pd.merge(df1, random_groups, on=['prognosis', 'SymptomGroup'], how='inner')
+
+# Keep remaining rows
+df_remaining = df1.merge(random_groups, on=['prognosis','SymptomGroup'], how='outer', indicator=True)
+df_remaining = df_remaining[df_remaining['_merge'] == 'left_only'].drop(columns=['_merge'])
+
+
+print(removed_rows.shape)
+print(df_remaining.shape)
+
+#set up training / test data
+X_train = df_remaining.drop(columns=['prognosis','SymptomGroup'])
+X_test = removed_rows.drop(columns=['prognosis','SymptomGroup'])
+y_train = df_remaining['prognosis']
+y_test = removed_rows['prognosis']
+
+```
+Leave one out datasets are ready for model training!
+
 ## 📦 Demo
 
 Video Link:
