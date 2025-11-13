@@ -546,6 +546,56 @@ Approach #2 is also applicable as it allows us to get a sense of how our model p
 
 Both approaches will be used to understand downstream model performance.
 
+## Model Selection and Performance
+INSERT Models and metrics
+
+## Model Robustness
+To evaluate how robust one of our top performing models (Random Forest) is to training data perturbation (Approach #1- Real world unrelated symptoms to prognosis), we randomly changed symptoms in our training set and evaluated their impact on disease prediction accuracy.  The percentage of random symptoms altered across the dataset ranged from 1% to 40% `[0.01, 0.02, 0.05, 0.075, 0.1, 0.125, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4]`
+
+```
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+X = mergedDF.drop(columns=['prognosis'])
+y = mergedDF['prognosis']
+
+perturbations = [0.01, 0.02, 0.05, 0.075, 0.1, 0.125, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4]
+
+for percent in perturbations:
+    #Randomly flip 0's to 1s (and vice versa) in the features dataframe
+    X_noisy = X.copy()
+
+    # total number of cells
+    n_cells = X_noisy.size
+
+    # number of cells to flip (10%)
+    n_flip = int(0.4 * n_cells)
+
+    # randomly select flat indices to flip
+    flip_indices = np.random.choice(n_cells, size=n_flip, replace=False)
+
+    # convert flat indices to row, col
+    rows, cols = np.unravel_index(flip_indices, X_noisy.shape)
+
+    # flip the selected cells
+    X_noisy.values[rows, cols] = 1 - X_noisy.values[rows, cols]
+    # Train/test split
+    X_train, X_test, y_train, y_test = train_test_split(X_noisy, 
+                                                    y, 
+                                                    test_size=0.2, # 20% test size
+                                                    random_state=42)
+    clf = RandomForestClassifier(n_estimators=500,
+                             random_state=42)
+    clf.fit(X_train, y_train)
+    y_pred = clf.predict(X_test)
+ 
+
+    accuracy = accuracy_score(y_test, y_pred)
+    print("Accuracy:", accuracy)
+    
+```
+![Random Forest Model Accuracy](images/RF_modelAccuracy.png)
+
+As the plot shows, the model's accuracy remains robust against symptoms patterns that are unrelated to a patient's disease.  However, model accuracy begins to sharply decline beyond 15% dataset perturbation (~19% of symptoms unrelated to prognosis.)
 
 ## 📦 Demo
 
