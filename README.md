@@ -109,7 +109,8 @@ df.head()
 df2 = pd.read_csv("/Users/adamhealey/Downloads/Testing.csv")
 print("Dataset shape:", df2.shape)
 df2.head()
-
+```
+```
 #look at column names and look to see which is different between the test and training set
 
 #save the column names of each dataframe to a set
