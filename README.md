@@ -635,7 +635,7 @@ y_train = df_remaining['prognosis']
 y_test = removed_rows['prognosis']
 
 ```
-Leave one out datasets are ready for model training!
+"Leave-one-out" datasets are ready for model training!
 
 ## 📦 Demo
 
