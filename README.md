@@ -73,9 +73,9 @@ The dataset is already divided into training and testing subsets. In total, it c
 |Exploratory Data Analysis | DBScan, PCA    | Dimensionality reduction and clustering | 
 | Machine Learning    | scikit-learn, xgboost | Train predictive models   |
 | Experiment Tracking | MLflow          | Log experiments & model metrics|
-| Packaging | MLflow          | Log experiments & model metrics|
-| Deployments | FastAPI          | Log experiments & model metrics|
-| UI / Demo           | Streamlit       | Local interactive interface   |
+| Packaging/Containerization | Docker          | Package app + dependencies into reproducible images for deployment|
+| Model Servings/API | FastAPI          | Serve the ML model via REST API endpoints for real-time predictions|
+| UI / Demo           | Streamlit       | Provide a user-friendly web UI for interacting with the model  |
 ---
 
 ## Sample Classification Models to Try
