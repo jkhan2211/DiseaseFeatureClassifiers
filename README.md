@@ -667,6 +667,25 @@ Video Link: Test
 
 
 ## ⚙️ Setup & Usage
+0. **Pre-requistes**
+To run the app, you must have docker installed in to your pc. Please follow the instructions below to download and install docker desktop
+
+Windows:
+- Docker Desktop
+
+- Enable WSL2 Backend
+
+- Start Docker Desktop before running the project
+
+Mac:
+- Install Docker Desktop for Mac
+
+That’s it — it will include Docker Compose
+
+Linux:
+```
+sudo apt install docker.io docker-compose-plugin
+```
 
 1. **Clone the repository**
 ```bash
