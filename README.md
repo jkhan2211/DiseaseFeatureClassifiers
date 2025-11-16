@@ -719,8 +719,6 @@ Bias present in the data may skew results, necessitating thorough examination an
 
 ## 📦 Demo
 
-Video Link(2):
-
 #### Video Demo of App:
 
 #### Team Reflections:
