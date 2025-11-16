@@ -756,12 +756,13 @@ cd DiseaseFeatureClassifiers
 ```
 
 3. **Start up the containers**
-Windows/Linux:
+
+**Windows/Linux:**
 ```
 docker-compose -f docker-compose.linux.yaml up -d
 ```
 
-Mac:
+**Mac:**
 ```
 # Make sure you have the latest code
 git pull origin main
