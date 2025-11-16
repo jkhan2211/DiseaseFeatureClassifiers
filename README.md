@@ -64,6 +64,10 @@ The dataset is already divided into training and testing subsets. In total, it c
 
 ---
 
+## Video Reflections
+[Adam Healey](https://drive.google.com/file/d/1W6yHmcD_tL3kjgfHdAr_pbDP1bnJ-V6x/view?usp=sharing)
+
+
 ## 📦 Technologies Used
 
 | Component           | Technology       | Purpose                        |
@@ -152,7 +156,6 @@ mergedDF = pd.concat([df, df2[df.columns]], # this ensures the correct ordering 
                      ignore_index=True)
 mergedDF.shape
 ```
-INSERT ADDITIONAL PREPROCESSING HERE.
 
 ## Exploratory Data Analysis (EDA)
 Now that we have our newly combined dataset, exploratory analysis can begin.
