@@ -5,7 +5,7 @@ It includes raw data, cleaned datasets, engineering-ready files, and the final C
 
 This directory keeps the project’s data pipeline organized and ensures full transparency from *** raw → cleaned → processed → training-ready.***
 
-![S3](images/mlflow_s3.png)
+![S3](../images/mflow_s3.png)
 
 # Data Storage Strategy & Version Control
 

@@ -4,7 +4,7 @@ These configurations define the selected model hyperparameters, feature settings
 
 This directory acts as the single source of truth for all model-related decisions used throughout experimentation, training, and deployment.
 
-![MlFlow](images/mlflow_dags.png)
+![MlFlow](../images/mlflow_dags.png)
 
 # Folder Structure
 
