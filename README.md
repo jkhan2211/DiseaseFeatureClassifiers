@@ -723,10 +723,7 @@ Bias present in the data may skew results, necessitating thorough examination an
 ---
 
 ## 📦 Demo
-
-#### Video Demo of App:
-
-#### Team Reflections:
+![App Screenshot](images/demo.png)
 
 ---
 
@@ -803,8 +800,6 @@ docker compose stop
 **Mac:**
 ```
 # To stop the app from running press ctrl-c
-# Then run following command
-docker compose stop
 ```
 
 6. **Kill the container**
