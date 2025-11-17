@@ -723,6 +723,11 @@ Bias present in the data may skew results, necessitating thorough examination an
 ---
 
 ## 📦 Demo
+
+##### System Design
+![System Design](images/arch.png)
+
+
 ![App Screenshot](images/demo.png)
 
 ---
