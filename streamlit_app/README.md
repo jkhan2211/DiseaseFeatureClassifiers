@@ -15,17 +15,14 @@ A Streamlit web application for predicting possible diseases based on selected s
 
 ## Quick Start
 *Using Docker*
+
     ```
     docker build -t disease-classifier .
     docker run -p 8501:8501 disease-classifier
     ```
     Open http://localhost:8501 in your browser
 
-*Without Docker*
-    ```
-    pip install -r requirements.txt
-    streamlit run main.py
-    ```
+
 
 ## Notes
 The app calls a backend API (/predict). Make sure the API is running.
